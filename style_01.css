@@ -1,0 +1,172 @@
+:root {
+    --red: #880000;
+    --text_color: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h3, h4 {
+    font-family: 'Amiri Quan';
+}
+
+.hdr_bg {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 110px;
+}
+
+.hdr {
+    z-index: 2;
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hdr .hdr_logo {
+    width: 5rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.hdr_text {
+    flex-direction: column;
+}
+
+.hdr_text .hdr_title_01 {
+    margin-top: 3rem;
+    margin-left: 14px;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--red);
+}
+
+.hdr_text .hdr_title_02 {
+    margin-top: 2px;
+    margin-left: 14px;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text_color);
+}
+
+.bdy {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.bdy .pup_hymn {
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--red);
+}
+
+.bdy .lyrc_container {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 50%;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.bdy .lyrc_container .lyrics {
+    position: relative;
+    width: 100%;
+    line-height: 34px;
+    font-family: 'Open Sans';
+    color: var(--text_color);
+    user-select: none;
+    text-align: center;
+}
+
+.audio_container {
+    width: 100%;
+}
+
+.audio {
+    display: block;
+    position: relative;
+    margin: 1rem auto;
+    width: 50%;
+}
+
+@media only screen and (min-width: 375px) {
+    .hdr {
+        position: relative;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hdr .hdr_logo {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .hdr_text .hdr_title_01 {
+        text-align: center;
+        margin: 0px;
+        padding-bottom: 4px;
+    }
+    
+    .hdr_text .hdr_title_02 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .bdy .lyrc_container {
+        width: 90%;
+    }
+    
+    .audio {
+        margin: 1rem auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hdr {
+        position: relative;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hdr .hdr_logo {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .hdr_text .hdr_title_01 {
+        text-align: center;
+        margin: 0px;
+        padding-bottom: 4px;
+    }
+    
+    .hdr_text .hdr_title_02 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .bdy .lyrc_container {
+        width: 60%;
+    }
+    
+    .audio {
+        margin: 1rem auto;
+        width: 60%;
+    }
+}
