@@ -103,6 +103,40 @@ h3, h4 {
     width: 50%;
 }
 
+@media only screen and (min-width: 300px) {
+    .hdr {
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hdr .hdr_logo {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .hdr_text .hdr_title_01 {
+        text-align: center;
+        margin: 0px;
+        padding-bottom: 4px;
+    }
+    
+    .hdr_text .hdr_title_02 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .bdy .lyrc_container {
+        width: 85%;
+    }
+    
+    .audio {
+        margin: 1rem auto;
+        width: 100%;
+    }
+}
+
 @media only screen and (min-width: 375px) {
     .hdr {
         position: relative;
